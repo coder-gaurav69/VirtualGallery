@@ -301,7 +301,7 @@ function App() {
                 checked={allSelected}
                 ref={(node) => { if (node) node.indeterminate = indeterminate; }}
                 onChange={(event) => handleSelectAll(event.target.checked)}
-                className="h-3.5 w-3.5 rounded border-slate-300 transition-all dark:border-slate-600"
+                className="h-4 w-4 rounded border-slate-300 accent-indigo-600 transition-all dark:border-slate-600"
               />
               <span className="text-[11px] font-black uppercase tracking-wider text-white">Select All</span>
             </label>
@@ -346,7 +346,7 @@ function App() {
                         type="checkbox"
                         checked={selectedIds.has(image.id)}
                         onChange={(event) => toggleSelect(image.id, event.target.checked)}
-                        className="peer h-4 w-4 appearance-none rounded border border-slate-300 bg-white transition-all checked:border-indigo-600 checked:bg-indigo-600 dark:border-slate-600 dark:bg-slate-800"
+                        className="h-4 w-4 rounded border-slate-300 accent-indigo-600 transition-all dark:border-slate-600"
                       />
                     </div>
                     <span className="text-[10px] font-black uppercase tracking-tight text-slate-500 dark:text-slate-400">Select</span>
