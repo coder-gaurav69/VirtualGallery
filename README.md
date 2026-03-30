@@ -125,29 +125,4 @@ npm run preview
 - Worker-based image processing keeps main thread responsive.
 - Download tasks are batched with limited concurrency.
 
-## Demo Checklist (for recording)
 
-1. Open app and show 120 images loaded.
-2. Open DevTools Elements and show only visible cards in DOM.
-3. Record fast scroll in Performance tab.
-4. Open image preview and close by outside click.
-5. Download one image and show watermark is baked into image.
-6. Open worker file and explain input/output message format.
-7. Select multiple images and run Batch Export.
-
-## Known Operational Notes
-
-- Requires internet access for Picsum API and image fetch.
-- If browser blocks popups/downloads, allow downloads for localhost.
-- OffscreenCanvas support depends on browser version.
-
-## Future Improvements
-
-- Add retry/fallback strategy if image API fails.
-- Add zip export for selected images.
-- Add unit tests for virtualization math and selection logic.
-- Add E2E flow test for worker download path.
-
-## Author
-
-Built for Assignment 3: Image Gallery + Canvas Watermark + Web Worker.
